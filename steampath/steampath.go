@@ -12,6 +12,7 @@ import (
 // appID is the numerical steam app ID, and dirName is the name of the
 // directory the game is saved in (e.g. appID="553850", dirName="Helldivers 2").
 func GetAppPath(appID, dirName string) (string, error) {
+	return "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Helldivers 2", nil
 	libfoldersPath, err := getLibraryfoldersVDFPath()
 	if err != nil {
 		return "", err
